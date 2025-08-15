@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".AboutFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="ABOUT" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/logo_animedxd"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_animedxd_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/description_animedxd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:justificationMode="inter_word"
+            android:text="AnimeDXD is a cutting-edge mobile application created to bring the ultimate anime experience to fans worldwide. Our app offers a vast and diverse library of anime titles across various genres, allowing users to explore and discover new favorites effortlessly. Besides streaming anime, users can stay updated with the latest anime news through a dynamic image carousel that showcases trending stories and events in the anime world.
+\nIn addition to anime, AnimeDXD features a dedicated manga section, providing detailed information including covers, titles, and descriptions to cater to manga enthusiasts. The app’s intuitive interface ensures smooth navigation with easy access to all content through a bottom navigation bar and tab controls.
+\nSecurity and personalization are key in AnimeDXD. Users can securely log in with validation checks and receive personalized greetings to enhance their experience. The app also encourages user interaction by allowing users to post reviews on anime titles, fostering a vibrant community of anime lovers.
+\nBuilt with a focus on user experience and visual appeal, AnimeDXD follows modern UI design principles to deliver an engaging and enjoyable platform. Whether you’re a casual viewer or a hardcore fan, AnimeDXD is designed to be your go-to app for all things anime and manga.
+\nJoin us and dive into the rich world of anime with AnimeDXD — your trusted companion for endless anime entertainment."
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/logo_animedxd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

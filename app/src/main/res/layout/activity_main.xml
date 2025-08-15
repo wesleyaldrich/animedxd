@@ -14,7 +14,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:padding="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -42,21 +45,24 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:layout_marginStart="16dp">
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome,"
+                android:text="@string/greeting_message"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="14sp"
-                android:textColor="#5A5A5A" />
+                android:textColor="@color/grey" />
 
             <TextView
                 android:id="@+id/userNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Naomi"
-                android:textSize="20sp"
+                android:text="@string/username"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="#000000" />
         </LinearLayout>
@@ -96,7 +102,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/bottom_nav_menu">
+            app:menu="@menu/bottom_nav_menu"
+            style="@style/CustomBottomNavigationView">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 

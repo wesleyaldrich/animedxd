@@ -7,4 +7,14 @@
 
     <style name="Theme.Animedxd" parent="Base.Theme.Animedxd" />
 
+    <style name="CustomBottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/BottomNavText</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavText</item>
+    </style>
+
+    <style name="BottomNavText" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">@font/poppins_thin_italic</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
 </resources>

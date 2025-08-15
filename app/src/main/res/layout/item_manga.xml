@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/manga_image"
+        android:layout_width="110dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_corner_bg"
+        android:clipToOutline="true"
+        android:src="@drawable/manga1" />
+
+    <TextView
+        android:id="@+id/manga_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manga Title"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:paddingTop="4dp"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/manga_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:fontFamily="@font/poppins_regular"
+        android:justificationMode="inter_word"
+        android:textSize="12sp"
+        android:ellipsize="end" />
+</LinearLayout>
